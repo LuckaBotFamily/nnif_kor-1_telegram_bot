@@ -53,7 +53,7 @@ def day_mess(day, week):
         third = "None"
     fourth = str(worksheet.acell('C' + str(x + 6) + ':F' + str(x + 6) + '').value)
     if fourth != "None":
-        fourth = f"<a href='{str(worksheet.acell('G' + str(x + 6)).value)}'>{second}</a>"
+        fourth = f"<a href='{str(worksheet.acell('G' + str(x + 6)).value)}'>{fourth}</a>"
     else:
         fourth = "None"
     text += "════════════════\n"
